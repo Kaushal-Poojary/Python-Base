@@ -1,0 +1,26 @@
+--Displaying Datatypes in a list--
+
+list_of_items = [1,'abc',36.21,'def']
+ls = [type(item) for item in list_of_items]
+print(ls)
+
+--Displaying Datatypes in a set--
+
+set_of_items = {1,'abc',36.21,'def'}
+ls = [type(item) for item in set_of_items]
+print(ls)
+
+--Displaying Datatypes in a tuple--
+
+tuple_of_items = (1,'abc',36.21,'def')
+ls = [type(item) for item in tuple_of_items]
+print(ls)
+
+--Displaying Datatypes in a dictionary--
+
+d1 = { 1:'one', 2:'two', 5.5:'five point five' }
+d2 = { '1':'one', '2':'two', '5':'five' }
+types1 = set(type(k) for k in d1.keys())
+types2 = set(type(k) for k in d2.keys())
+print(types1)
+print(types2)
