@@ -1,0 +1,6 @@
+name = 'Himesh Reshammiya'
+song = 'Tera Suroor '
+print(name[2:10])           #Slicing of string
+print(name+' - '+song)      #Concatenation of string
+print(name.index("Res"))    #Indexing of string
+print(song*3)               #Repetition of string
