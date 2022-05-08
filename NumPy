@@ -1,0 +1,49 @@
+import numpy as np
+
+a=np.ones((2,3))
+b=np.zeros((3,2))
+print(a)
+print(b)
+
+print(np.random.randint(0,10,size=(3,5))) #Returns a random int from a range given
+print(np.random.random(size=(3,5)))       #Returns a random decimal no. between 0 and 1
+print(np.random.rand(3,5,2))              #Used to create a array in a given shape
+
+np.random.seed(10)                       #While using a random function, the numbers change everytime we run the code
+a=(np.random.randint(0,10,size=(3,5)))   #random.seed(any integer) keeps the generated random nos fixed
+print(a)                                 #i.e once a number generated wont be changed no matter how much we run the code
+
+b=np.unique(a)
+print(b)                                #Returns all the unique numbers in an array
+
+b=np.random.rand(3,5,4)
+print(b)
+print("-----------------------")
+print(b[:2,:2,:2])                      #SLicing,[:no of inner matrices,:no of rows,:no of columns]
+print(np.log(b))                        #To the base e
+np.sum(b),np.max(b),np.min(b)                              
+np.mean(b)                              #Average
+np.var(b)                               #Variance
+np.std(b)                               #Standard Deviation (also square root of variance)
+
+
+a=np.array([9,7,3,44,67,21])
+print(np.var(a))
+print(np.std(a))
+print(np.sqrt(np.var(a)))
+b=np.random.rand(3,5,4)
+print(b)
+print('------------------------------')
+print(b.T)                             #Transpose of matrix
+
+Let a be a matrix of 5x3 and b be a matrix of 3x5
+Then a*b gives element wise product i.e a11*b11, a12*b12
+np.dot(a,b) is used for matrix multiplication       #Watch video no 13 from drive for further references
+np.sort(b)                              # Sorts an array acc to each row
+mp.argsort(b)                           #Returns the index where each element in a row would be ranked if sorted
+np.argmax(b,axis=x)                    #States the index of max number in a row(axis=1 for row) or column(axis=0 for col)
+
+To see how to convert an image to numpy array, refer to video no 16 from drive
+
+a=np.arange(1,100,10)
+print(a)
