@@ -24,3 +24,7 @@ types1 = set(type(k) for k in d1.keys())
 types2 = set(type(k) for k in d2.keys())
 print(types1)
 print(types2)
+print(d1.keys())      #Print keys in dictionaries
+print(d1.values())    #Print values in dictionaries
+
+len(d1)               #Print Length of dictionary
